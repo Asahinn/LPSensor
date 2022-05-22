@@ -78,7 +78,12 @@ static uint32_t           Idle_Delay;
  * Return         :
  ***********************************************************/
 void LpSensorApp_Loop(void){
-	 BME280_Sensor_Init(&SensorObj,&Bme280Obj);
+	int8_t  ret =0 ;
+	ret = BME280_Sensor_Init(&SensorObj,&Bme280Obj);
+	if(ret){
+		PRINTF("ERR: BME280 Init Error \r\n");
+		return;
+	}
 	 while(1){
 		 BME280_Sensor_Set_ForcedMode(&Bme280Obj);
 		 Idle_Delay =  SENSOR_DATARATE_MSEC - Conv_Delay;
