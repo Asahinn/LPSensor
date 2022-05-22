@@ -21,10 +21,10 @@ For the high power consumption:
    - The power consumption is 0.4uA when Deep Power Down ve WKT are together used.[1]
    -  BME280 is configured for low Weather Monitoring. The total power consumption of the used structure
       is equal to 0.16uA. However, in precision and noise subjects, it is less successful.[2]   
-![](docs/FlowCart.jpg)
+![](Doc/FlowCart.jpg)
 
 # Connection Diagram
-![](docs/Connection_Diagram.jpg)
+![](Doc/Connection_Diagram.jpg)
 # Prerequisities
 In order to develop firmware for LPSensorApp , you will need:
   - MCUXpresso IDE
